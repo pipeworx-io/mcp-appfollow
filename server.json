@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/appfollow",
   "title": "Appfollow",
   "description": "AppFollow MCP — App Store & Google Play reviews, ratings, and ASO keyword",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/appfollow",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-appfollow",
