@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-appfollow",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "AppFollow MCP — App Store & Google Play reviews, ratings, and ASO keyword",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-2c4b1ed09bf42c3622629001154e8b99f2f23a17cca9ef2f91592a4770c35d2a",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-03b45f8bd37ccf2625c8b2288467d1d030c9c6a9452c5d02b5cb8d9949c33d87",
+    "sourceCommit": "dca20ba6e13a9aa1c9f2918fc2ddaffe4cc30e5c"
   }
 }
