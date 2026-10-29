@@ -1,0 +1,89 @@
+[
+  {
+    "name": "appfollow_reviews",
+    "description": "Recent App Store / Google Play reviews for an app. Returns author, star rating, title, text, date, app version, store, and whether the developer replied. Example: appfollow_reviews({ app_id: \"1038369065\", country: \"us\", _apiKey: \"your-token\" }). app_id is the store external id — App Store numeric id (e.g. \"1038369065\") or Google Play package name (e.g. \"com.instagram.android\").",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "app_id": {
+          "type": "string",
+          "description": "App store external id: App Store numeric id (e.g. \"1038369065\") or Google Play package name (e.g. \"com.instagram.android\")."
+        },
+        "country": {
+          "type": "string",
+          "description": "Two-letter country/store code, e.g. \"us\", \"gb\". Optional (default \"us\")."
+        },
+        "from": {
+          "type": "string",
+          "description": "Start date YYYY-MM-DD (optional; defaults to 30 days ago)."
+        },
+        "to": {
+          "type": "string",
+          "description": "End date YYYY-MM-DD (optional; defaults to today)."
+        },
+        "_apiKey": {
+          "type": "string",
+          "description": "AppFollow API token (generate on the API management page in your AppFollow account)."
+        }
+      },
+      "required": [
+        "app_id",
+        "_apiKey"
+      ]
+    }
+  },
+  {
+    "name": "appfollow_ratings",
+    "description": "Ratings summary for an app: average rating, total ratings count, and the 5/4/3/2/1 star breakdown. Example: appfollow_ratings({ app_id: \"1038369065\", country: \"us\", _apiKey: \"your-token\" }). app_id is the App Store numeric id or Google Play package name.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "app_id": {
+          "type": "string",
+          "description": "App store external id: App Store numeric id (e.g. \"1038369065\") or Google Play package name."
+        },
+        "country": {
+          "type": "string",
+          "description": "Two-letter country/store code, e.g. \"us\". Optional (default \"us\")."
+        },
+        "_apiKey": {
+          "type": "string",
+          "description": "AppFollow API token."
+        }
+      },
+      "required": [
+        "app_id",
+        "_apiKey"
+      ]
+    }
+  },
+  {
+    "name": "appfollow_aso_keywords",
+    "description": "ASO keyword rankings for an app: which search keywords the app ranks for and its store position/popularity for each. Example: appfollow_aso_keywords({ app_id: \"1038369065\", country: \"us\", _apiKey: \"your-token\" }). app_id is the App Store numeric id or Google Play package name. Requires an AppFollow plan with ASO enabled on the token.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "app_id": {
+          "type": "string",
+          "description": "App store external id: App Store numeric id (e.g. \"1038369065\") or Google Play package name."
+        },
+        "country": {
+          "type": "string",
+          "description": "Two-letter country/store code, e.g. \"us\". Optional (default \"us\")."
+        },
+        "device": {
+          "type": "string",
+          "description": "Device, e.g. \"iphone\", \"ipad\". Optional."
+        },
+        "_apiKey": {
+          "type": "string",
+          "description": "AppFollow API token (ASO must be enabled on the plan)."
+        }
+      },
+      "required": [
+        "app_id",
+        "_apiKey"
+      ]
+    }
+  }
+]
